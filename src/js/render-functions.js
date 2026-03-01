@@ -10,7 +10,6 @@ let lightbox = new SimpleLightbox('.gallery a', {
 });
 
 export function createGallery(images) {
-  // Розмітка картки згідно з вимогами (webformatURL, largeImageURL, tags, likes і т.д.)
   const markup = images
     .map(
       ({
@@ -48,12 +47,12 @@ export function clearGallery() {
 
 export function showLoader() {
   if (loader) {
-    loader.classList.add('is-open'); // Додаємо клас для відображення
+    loader.classList.add('is-open');
   }
 }
 
 export function hideLoader() {
   if (loader) {
-    loader.classList.remove('is-open'); // Видаляємо клас після завершення
+    loader.classList.remove('is-open');
   }
 }
